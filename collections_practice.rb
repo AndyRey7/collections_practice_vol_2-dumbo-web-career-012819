@@ -31,7 +31,7 @@ def count_elements(array)
         original_hash[:count] += 1
       end
     end
-  end
+  end.uniq
 end
 
 def merge_data(keys, data)
