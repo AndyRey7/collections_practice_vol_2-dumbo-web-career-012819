@@ -43,7 +43,7 @@ def merge_data(keys, data)
     otherObject.each do |property,value|
       object[property] = value
     end
-  end
+  end.uniq
 end
 
 def find_cool(cool)
