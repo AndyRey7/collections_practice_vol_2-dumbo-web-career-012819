@@ -41,10 +41,9 @@ def merge_data(keys, data)
     otherObject = data[0][matchingProperty]
     
     otherObject.each do |property,value|
-      object[property] = value.uniq
+      object[property] = value
     end
   end
-  
 end
 
 def find_cool(cool)
